@@ -1,0 +1,23 @@
+[extensions]
+hgext.mq =
+hgext.extdiff =
+hgext.rebase =
+pager =
+color =
+
+[ui]
+username = Jack Kolb <jkolb@berkeley.edu>
+
+[alias]
+qstatus = status --rev -2:.
+
+[merge-tools]
+executable = meld
+gui = True
+
+[pager]
+pager = LESS=FRSXQ less
+quiet = True
+
+[web]
+cacerts = /etc/ssl/certs/ca-certificates.crt
