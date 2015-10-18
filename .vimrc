@@ -3,12 +3,14 @@ colorscheme molokai
 
 set hlsearch
 set nowrap
+set showcmd
 set visualbell
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set cc=80
+set textwidth=80
+let &cc=&textwidth
 
 map <F7> : tabp <ENTER>
 map <F8> : tabn <ENTER>
@@ -21,9 +23,12 @@ let g:rehash256=1
 set t_Co=256
 set term=screen-256color
 
+let mapleader=","
+nnoremap <leader>q gq0
+
 filetype plugin indent on
 autocmd FileType make setlocal noexpandtab
-autocmd FileType tex setlocal wrap spell
+autocmd FileType tex,markdown setlocal wrap spell
 autocmd BufRead,BufNewFile *.upc set filetype=c
 autocmd BufRead,BufNewFile *.sbt set filetype=scala
 autocmd BufNewFile,BufRead *.md set filetype=markdown
