@@ -9,8 +9,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set textwidth=80
-let &cc=&textwidth
+set cc=80
 
 map <F7> : tabp <ENTER>
 map <F8> : tabn <ENTER>
@@ -32,6 +31,7 @@ autocmd FileType tex,markdown setlocal wrap spell
 autocmd BufRead,BufNewFile *.upc set filetype=c
 autocmd BufRead,BufNewFile *.sbt set filetype=scala
 autocmd BufNewFile,BufRead *.md set filetype=markdown
+autocmd BufNewFile,BufRead *.s,*.S set filetype=asm
 set autoindent
 
 highlight ExtraWhitespace ctermbg=red guibg=red
