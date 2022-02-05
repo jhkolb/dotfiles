@@ -12,7 +12,7 @@ set expandtab
 set cc=80
 set autoread
 set showmatch
-set clipboard+=unamed
+set clipboard+=unnamed
 
 map <F7> : tabp <ENTER>
 map <F8> : tabn <ENTER>
@@ -30,7 +30,7 @@ nnoremap <leader>q gq0
 
 filetype plugin indent on
 autocmd FileType make setlocal noexpandtab
-autocmd FileType tex,markdown setlocal wrap spell
+autocmd FileType tex,markdown setlocal wrap spell textwidth=80
 autocmd BufRead,BufNewFile *.upc set filetype=c
 autocmd BufRead,BufNewFile *.sbt set filetype=scala
 autocmd BufNewFile,BufRead *.md set filetype=markdown
