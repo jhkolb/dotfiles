@@ -13,6 +13,8 @@ set cc=80
 set autoread
 set showmatch
 set clipboard+=unnamed
+set ruler
+set number
 
 map <F7> : tabp <ENTER>
 map <F8> : tabn <ENTER>
