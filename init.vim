@@ -40,13 +40,13 @@ Plug 'nvim-lualine/lualine.nvim'
 call plug#end()
 
 " Everforest configuration
-let g:everforest_background = 'medium'
+let g:everforest_background = 'hard'
 let g:everforest_disable_italic_comment = 1
 colorscheme everforest
 
 " TreeSitter Configuration (in Lua)
 lua <<LUA
-require('nvim-treesitter.configs').setup {
+require('nvim-treesitter.config').setup {
     ensure_installed = "all",
     highlight = {
         enable = true,
